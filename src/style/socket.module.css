@@ -1,0 +1,139 @@
+.Div {
+    display: inline-block;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+    width: 800px;
+    height: 800px;
+    overflow-wrap: break-word;
+    overflow: auto;
+    padding: 10px;
+    margin: 10px;
+    position: relative;
+    margin-bottom: 80px;
+}
+
+.connmsg {
+    display: inline-block;
+    box-sizing: border-box;
+    flex-direction: column;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    width: 300px;
+    max-height: 150px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+}
+
+.connmsg::-webkit-scrollbar {
+    display: none;
+}
+
+
+.FormDiv {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: -3px;
+
+}
+
+.FormDiv form {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    position: relative;
+}
+
+.FormDiv .msgButton {
+    position: absolute;
+    top: -12px;
+    right: -100px;
+    width: 90px;
+    height: 55px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: rgba(0, 0, 0, 0.65);
+    color: white;
+    border: 1px solid #f5f5f5;
+    box-shadow: 0 0 10px #000;
+    cursor: pointer;
+    transition: all ease-in-out 0.1s;
+
+}
+
+.FormDiv .msgButton:active {
+    transform: scale(0.9);
+    box-shadow: 0 3px 15px -2px;
+
+}
+
+
+.Div form textarea {
+    resize: none;
+    line-break: auto;
+    font-size: 1.5rem;
+    padding: 0 30px;
+    width: 650px;
+    height: 50px;
+    border-radius: 10px;
+    background: #444444;
+    border: 1px solid #686B72;
+    color: white;
+    overflow-wrap: break-word;
+    overflow: auto;
+}
+
+.Div form textarea::placeholder {
+    color: #c1c4ca;
+    font-size: large;
+}
+
+.Div form textarea:focus {
+    outline: none;
+    box-shadow: 0 0 10px #000;
+
+}
+
+.MsgDiv {
+    display: inline-block;
+
+    flex-direction: column;
+    width: 100%;
+    height: 500px;
+    overflow: auto;
+    scroll-behavior: smooth;
+
+}
+
+.ChatmsgDiv {
+    display: flex;
+    justify-content: flex-end;
+    justify-content: space-between;
+    margin: 20px 0px;
+    background-color: #6188ff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+    position: relative;
+}
+
+.ChatmsgDiv p {
+
+    font-size: 20px;
+    font-weight: bolder;
+    color: #f5f5f5;
+
+
+
+
+
+    margin-bottom: 80px;
+}
+
+.MsgDiv::-webkit-scrollbar {
+    display: none;
+}

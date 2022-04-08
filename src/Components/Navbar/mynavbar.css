@@ -1,0 +1,187 @@
+.navmenu li, .navmenu p, .navmenu ul {
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
+
+}
+
+.navheader {
+    display: flex;
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(255, 255, 255, 0.438), inset 4px 4px 15px 0px rgba(255, 255, 255, 0.438), 12px 2px 6px 0px rgba(255, 255, 255, 0.438);
+    box-shadow: 5px 5px 5px 0px rgba(255, 255, 255, 0.438), inset 4px 4px 15px 0px rgba(255, 255, 255, 0.438), 12px 2px 6px 0px rgba(255, 255, 255, 0.438);
+    height: 70px;
+    border-radius: 0px;
+    padding: 0px, 40px, 0px, 40px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+    /* background-color: rgba(181, 182, 174, 1); */
+    background-color: rgba(255, 166, 68);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+.navheader .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.navheader .title img {
+    /* background-image: -webkit-linear-gradient(red, black);
+    background-image: -moz-linear-gradient(red, black);
+    background-image: -ms-linear-gradient(red, black);
+    background-image: -o-linear-gradient(red, black);
+    background-image: linear-gradient(red, black); */
+    width: 70px;
+    height: 70px;
+    border-radius: 20%;
+    transition: transform 0.2s ease-in-out;
+}
+
+.navheader .title img:hover {
+    cursor: pointer;
+    transform: scale(1.1) rotate(-45deg);
+    transform-origin: calc(100% - 50px);
+
+}
+
+.navheader form input {
+    position: absolute;
+    margin-left: 50px;
+    padding: 0 30px;
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    background: white;
+    border: 1px solid #686B72;
+    color: black
+}
+
+.navheader form {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navheader form input:focus {
+    outline: none;
+}
+
+.navheader .title form button {
+    position: relative;
+    left: 325px;
+    /* margin-left: 330px;
+    padding: 0 10px; */
+    background: none;
+    color: rgb(0, 178, 255);
+    font-weight: 650;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.navheader .bssearch {
+    position: relative;
+    left: 50px;
+    padding: 5px 8px;
+    color: black;
+}
+
+.navmenu {
+    display: flex;
+
+}
+
+.navmenu li {
+    margin-left: 10px;
+}
+
+.navheader a {
+    display: block;
+    padding: 10px;
+    color: white;
+    font-weight: 1000;
+    font-size: large;
+    text-decoration: none;
+}
+
+.mysection h1 {
+    text-align: center;
+    margin-top: 100px;
+
+}
+
+.mysection img {
+    display: block;
+    max-width: 100%;
+}
+
+.sectionflex {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.sectionflex .profile {
+    border-radius: 999px;
+    cursor: pointer;
+}
+
+.sectionflex>div {
+    flex: 1 1 200px;
+    margin: 10px;
+
+}
+
+.grid1 {
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    grid-gap: 20px;
+    max-width: 800px;
+    padding: 10px;
+    margin: 0 auto;
+
+}
+
+.sidebar>div {
+    margin-bottom: 10px;
+}
+
+.grid1 .profile {
+    border-radius: 999px;
+    cursor: pointer;
+}
+
+
+
+
+@media (max-width: 1000px) {
+    .navheader .navlist, .logoutbutton {
+        display: none;
+    }
+
+
+}
+
+@media (max-width: 850px) {
+
+    .navheader form input {
+
+        width: 100px;
+    }
+
+    .navheader .title form button {
+        left: 120px;
+    }
+}
