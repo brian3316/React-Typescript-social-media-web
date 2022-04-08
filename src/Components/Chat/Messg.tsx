@@ -73,7 +73,7 @@ function Messg({ own, message }: Props) {
                 <div className="messageTop">
                     <img
                         className="messageImg"
-                        src={unsplashIMG()[0]?.urls?.small}
+                        src={own ? unsplashIMG()[3]?.urls?.small : unsplashIMG()[0]?.urls?.small}
                         alt=""
                     />
                     <p style={{ fontSize: '10px', position: 'relative', color: (own ? 'blue' : 'gray') }}>{message.senderName}</p>
