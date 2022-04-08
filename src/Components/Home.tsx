@@ -186,7 +186,7 @@ export default function Home() {
                         {
                             state.userInfo?.name?.length > 0 &&
                             <>
-                                <h1>歡迎 {state.userInfo?.name} 回來. {width}</h1>
+                                <h1>歡迎 {state.userInfo?.name} 回來.</h1>
                                 <Div>
                                     <NSlider ref={carousel} whileTap={{ cursor: "grabbing" }}>
                                         <motion.div className="inner-nslider"
